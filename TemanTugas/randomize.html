@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize - TemanTugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            TEMANTUGAS
+            <p style="font-size: 12px; font-weight: 400; margin-top: 8px;">
+                Student Group Generator
+            </p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="mahasiswa.html">♙ Data Mahasiswa</a>
+            <a href="randomize.html" class="active">⚄ Randomize</a>
+            <a href="hasil.html">▤ Hasil Kelompok</a>
+            <a href="riwayat.html">◷ Riwayat</a>
+        </nav>
+
+        <div class="sidebar-footer">TemanTugas © 2026</div>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h1 class="page-title">Randomize Kelompok</h1>
+                <p class="page-description">
+                    Atur jumlah kelompok dan acak mahasiswa secara otomatis.
+                </p>
+            </div>
+        </div>
+
+        <section class="card">
+            <h2>Pengaturan Randomisasi</h2>
+
+            <div class="random-info">
+                <p>Total mahasiswa terdaftar</p>
+                <h2 id="totalPeserta">0 Mahasiswa</h2>
+            </div>
+
+            <form id="formRandomize">
+                <label for="jumlahKelompok">Jumlah Kelompok</label>
+                <input
+                    type="number"
+                    id="jumlahKelompok"
+                    min="1"
+                    placeholder="Contoh: 8"
+                    required
+                >
+
+                <button type="submit">⚄ Mulai Randomize</button>
+            </form>
+
+            <p class="random-note">
+                Sistem akan membagi mahasiswa secara acak dan seimbang.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

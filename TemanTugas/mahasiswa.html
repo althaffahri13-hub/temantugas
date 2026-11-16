@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa - TemanTugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            TEMANTUGAS
+            <p style="font-size: 12px; font-weight: 400; margin-top: 8px;">
+                Student Group Generator
+            </p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="mahasiswa.html" class="active">♙ Data Mahasiswa</a>
+            <a href="randomize.html">⚄ Randomize</a>
+            <a href="hasil.html">▤ Hasil Kelompok</a>
+            <a href="riwayat.html">◷ Riwayat</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            TemanTugas © 2026
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h1 class="page-title">Data Mahasiswa</h1>
+                <p class="page-description">
+                    Kelola dan simpan data mahasiswa untuk pembagian kelompok.
+                </p>
+            </div>
+
+            <p>Selamat datang di TemanTugas 👋</p>
+        </div>
+
+        <!-- FORM INPUT -->
+        <section class="card">
+
+            <h2>Tambah Mahasiswa</h2>
+
+            <form id="formMahasiswa">
+
+                <label>NIM</label>
+                <input
+                    type="text"
+                    id="nim"
+                    placeholder="Masukkan NIM mahasiswa"
+                    required
+                >
+
+                <label>Nama Mahasiswa</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama mahasiswa"
+                    required
+                >
+
+                <label>Kelas</label>
+                <input
+                    type="text"
+                    id="kelas"
+                    placeholder="Contoh: 01SIFP005"
+                    required
+                >
+
+                <button type="submit">+ Tambah Mahasiswa</button>
+
+            </form>
+
+        </section>
+
+        <!-- TABEL MAHASISWA -->
+        <section class="card">
+
+            <h2>Daftar Mahasiswa</h2>
+
+
+            <div class="student-toolbar">
+
+                <input
+                    type="text"
+                    id="cariMahasiswa"
+                    placeholder="Cari NIM, nama, atau kelas..."
+                >
+
+                <button type="button" id="importCSV">
+                    ↑ Import CSV
+                </button>
+
+                <input
+                    type="file"
+                    id="fileCSV"
+                    accept=".csv"
+                    hidden
+                >
+
+                <button type="button" id="exportCSV">
+                    ↓ Export CSV
+                </button>
+
+            </div>
+
+            <p id="jumlahMahasiswa">Total: 0 mahasiswa</p>
+
+            <div class="table-wrapper">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama Mahasiswa</th>
+                            <th>Kelas</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="daftarMahasiswa"></tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Kelompok - TemanTugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            TEMANTUGAS
+            <p style="font-size: 12px; font-weight: 400; margin-top: 8px;">
+                Student Group Generator
+            </p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="mahasiswa.html">♙ Data Mahasiswa</a>
+            <a href="randomize.html">⚄ Randomize</a>
+            <a href="hasil.html" class="active">▤ Hasil Kelompok</a>
+            <a href="riwayat.html">◷ Riwayat</a>
+        </nav>
+
+        <div class="sidebar-footer">TemanTugas © 2026</div>
+    </aside>
+
+    <main class="main-content">
+        <button type="button" id="downloadPDF">
+            ↓ Download PDF
+        </button>
+        <div class="topbar">
+            <div>
+                <h1 class="page-title">Hasil Kelompok</h1>
+                <p class="page-description">
+                    Berikut hasil pembagian mahasiswa secara acak.
+                </p>
+            </div>
+        </div>
+
+        <section class="card">
+            <div class="result-heading">
+                <h2>Kelompok yang Terbentuk</h2>
+                <a href="randomize.html" class="primary-link">
+                    Randomize Lagi
+                </a>
+            </div>
+
+            <div id="informasiHasil"></div>
+            <div id="daftarKelompok" class="group-container"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
