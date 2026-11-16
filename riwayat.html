@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat - TemanTugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">
+            TEMANTUGAS
+            <p style="font-size: 12px; font-weight: 400; margin-top: 8px;">
+                Student Group Generator
+            </p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html">⌂ Dashboard</a>
+            <a href="mahasiswa.html">♙ Data Mahasiswa</a>
+            <a href="randomize.html">⚄ Randomize</a>
+            <a href="hasil.html">▤ Hasil Kelompok</a>
+            <a href="riwayat.html" class="active">◷ Riwayat</a>
+        </nav>
+
+        <div class="sidebar-footer">TemanTugas © 2026</div>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h1 class="page-title">Riwayat Randomize</h1>
+                <p class="page-description">
+                    Lihat kembali hasil pembagian kelompok sebelumnya.
+                </p>
+            </div>
+        </div>
+
+        <section class="card">
+
+            <div class="history-heading">
+                <h2>Riwayat Pembagian Kelompok</h2>
+
+                <button id="hapusSemuaRiwayat" class="delete-history">
+                    Hapus Semua Riwayat
+                </button>
+            </div>
+
+            <div id="daftarRiwayat"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

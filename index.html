@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TemanTugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            TEMANTUGAS
+            <p style="font-size: 12px; font-weight: 400; margin-top: 8px;">
+                Student Group Generator
+            </p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="active">⌂ Dashboard</a>
+            <a href="mahasiswa.html">♙ Data Mahasiswa</a>
+            <a href="randomize.html">⚄ Randomize</a>
+            <a href="hasil.html">▤ Hasil Kelompok</a>
+            <a href="riwayat.html">◷ Riwayat</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            TemanTugas © 2026
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h1 class="page-title">Dashboard</h1>
+                <p class="page-description">
+                    Selamat datang di aplikasi TemanTugas.
+                </p>
+            </div>
+
+            <p>Halo, Mahasiswa 👋</p>
+        </div>
+
+        <!-- WELCOME CARD -->
+        <section class="card welcome-card">
+
+            <h2>Selamat Datang di TemanTugas!</h2>
+
+            <p>
+                Buat pembagian kelompok mahasiswa dengan lebih mudah,
+                cepat, dan adil melalui sistem randomisasi otomatis.
+            </p>
+
+            <a href="randomize.html" class="primary-link">
+                Mulai Randomize →
+            </a>
+
+        </section>
+
+        <!-- STATISTIK -->
+        <section class="stats-container">
+
+            <div class="card stat-card">
+                <p>Total Mahasiswa</p>
+                <h2 id="totalMahasiswa">0</h2>
+                <span>Data mahasiswa tersimpan</span>
+            </div>
+
+            <div class="card stat-card">
+                <p>Jumlah Kelompok</p>
+                <h2 id="totalKelompok">0</h2>
+                <span>Kelompok dari randomisasi terakhir</span>
+            </div>
+
+            <div class="card stat-card">
+                <p>Riwayat Randomize</p>
+                <h2 id="totalRiwayat">0</h2>
+                <span>Total pengacakan tersimpan</span>
+            </div>
+
+        </section>
+
+        <!-- AKTIVITAS TERBARU -->
+        <section class="card">
+
+            <h2>Aktivitas Terbaru</h2>
+
+            <div id="aktivitasTerbaru">
+                <p>Belum ada aktivitas randomisasi.</p>
+            </div>
+
+        </section>
+
+        <!-- MENU UTAMA -->
+        <section class="card">
+
+            <h2>Menu Utama</h2>
+
+            <div class="dashboard-menu">
+
+                <a href="mahasiswa.html" class="dashboard-item">
+                    <div class="menu-icon">♙</div>
+                    <h3>Data Mahasiswa</h3>
+                    <p>Kelola dan simpan daftar mahasiswa.</p>
+                </a>
+
+                <a href="randomize.html" class="dashboard-item">
+                    <div class="menu-icon">⚄</div>
+                    <h3>Randomize Kelompok</h3>
+                    <p>Acak mahasiswa menjadi beberapa kelompok.</p>
+                </a>
+
+                <a href="hasil.html" class="dashboard-item">
+                    <div class="menu-icon">▤</div>
+                    <h3>Hasil Kelompok</h3>
+                    <p>Lihat hasil pembagian kelompok.</p>
+                </a>
+
+                <a href="riwayat.html" class="dashboard-item">
+                    <div class="menu-icon">◷</div>
+                    <h3>Riwayat</h3>
+                    <p>Lihat kembali hasil randomisasi sebelumnya.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
